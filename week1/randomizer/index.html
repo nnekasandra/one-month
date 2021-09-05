@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun facts</title>
+    <style>
+        body{
+            background-color: #023047;
+            color: #219ebc;
+        }
+        h1{
+            font-size: 30px;
+            color: #8ecae6;
+            text-align: center;
+        }
+        p{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        img{
+            max-width: 100%;
+            display: block;
+        }
+        footer p{
+            font-size: 15px;
+            text-align: center;
+        }
+        footer p a{
+            font-size: 15px;
+            text-decoration: none;
+            color: #8ecae6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fun Facts About Reading</h1>
+    <p>Do you Know that 🤔?</p>
+    <script>
+        let facts = [
+            'Readers are Leaders.',
+            'Reading helps improve relationships.',
+            'Reading increases your vocabulary and communication skills.',
+            'Reading reduces stress.',
+            'Reading boosts your self confidence and self esteem as you get knowledgeable about lots of things.',
+            'Reading can be therapeutic 😊'
+        ]
+        let analogy = [
+            '<img src="images/leader.jpg" alt="Barrack Obama">',
+            '<img src="images/relationship.jpg" alt="relationship">',
+            '<img src="images/communicate.jpg" alt="people talking together">',
+            '<img src="images/stress.jpg" alt="woman medidating">',
+            '<img src="images/confident.jpg" alt="confident woman">',
+            '<img src="images/meditate.jpg" alt="woman medidating">'
+        ]
+        let randomizer = Math.floor(Math.random()*facts.length);
+        let eachFact = facts[randomizer];
+        let eachImage = analogy[randomizer];
+        document.write(eachFact + eachImage);
+    </script>
+    <footer>
+        <p>Made with 🖤 <a href="https://nnekasandra.medium.com">by Sandra</a></p>
+        <p>Images from <a href="https://unsplash.com">Unsplash</a></p>
+    </footer>
+</body>
+</html>

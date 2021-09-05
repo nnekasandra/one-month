@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <link rel="stylesheet" href="style.css">
+		<title>Oprah Likes You. And so do other people.</title>
+    </head>
+    <body>
+		<img src="images/o.jpg" alt="oprah">
+        <script>
+            let username = prompt('hello, who are you?');
+            let car = ['Jeep', 'Honda', 'sports car'];
+			let cars=[
+				"<img src ='images/jeep.png' alt ='jeep'/>",
+				"<img src ='images/honda.png' alt ='honda'/>",
+				"<img src ='images/sport.png' alt ='sport car'/>"
+			]
+            if(username == 'sandra'){
+                document.write('<h1> Welcome ' + username + '! you won a '+ car[0] +cars[0]+'</h1>');
+            }else if(username == 'chris'){
+				document.write('<h1> Welcome ' + username + '! you won a '  + car[1]+ cars[1]+'</h1>')
+			}
+            else if(username == 'livinus'){
+				document.write('<h1> Welcome ' + username + '! you won a '  + car[2]+ cars[2] + '</h1>')
+			}
+            else{
+                document.write('<h2> Hello ' + username + ' Welcome!</h2>');
+            }
+        </script>
+	</body>
+
+</html>
